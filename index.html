@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="text-area"><h1 id="password">T35T3 B0% *¨$@!</h1></header>
+
+        <main class="length-options-area">
+            <div class="length-option">
+                <div class="radio-before" id="ten-characters-option-before"><div class="radio-after" id="ten-characters-option-after"></div></div>
+                <h3>Length: 10 characters</h3>
+            </div>
+
+            <div class="length-option">
+                <div class="radio-before" id="twelve-characters-option-before"><div class="radio-after" id="twelve-characters-option-after"></div></div>
+                <h3>Length: 12 characters</h3>
+            </div>
+
+            <div class="length-option">
+                <div class="radio-before" id="fourteen-characters-option-before"><div class="radio-after" id="fourteen-characters-option-after"></div></div>
+                <h3>Length: 14 characters</h3>
+            </div>
+        </main>
+
+        
+        <div class="btn-area"><button onclick="generatePassword()" id="generate-btn">Generate Password</button></div>
+        <footer class="btn-area">
+            <div class="btn-subarea"><button id="show-btn" onmousedown="showPassword()" onmouseup="hidePassword()">Show</button></div>
+            <div class="btn-subarea"><button id="copy-btn" onclick="copyPassword()">Copy</button></div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
